@@ -6,8 +6,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+  	<header>
+  		<h1>Caesar Cipher</h1>
+  		<p></p>
+  	</header>
+    <div id="root">
+    	<div id="bEnco">
+    		
+    		<h2>Aqui debes ingresar el mensaje que deseas codificar con el numero de
+    			dezplazamientos hacia la derecha que quieres que tengan las letras de tu 
+    			mensaje.
+    		</h2>
+    		
+	    		<label for="normalMes">Ingresa el texto a codificar:</label>	<br/>
+	    		<input type="text" id="normalMes">	<br/>
+	    		
+	    		<label for="rightMove">Cuantos dezplazamientos 
+	    			quieres que tengan las letras.</label>	<br/>
+	    		<input type="text" id="rightMove">	<br/>
+	    		
+	    		<h3>Texto encriptado:</h3>
+	    		<p></p>
+    	
+    	
+    	</div>
+    	<div id="bDeco">
+    	
+    	<h2>Solo podras decodificar un mensaje si sabes el numero de desplazamientos.
+    		(Recuerda que debe ser personal)
+    	</h2>
+    	
+    		<label for="encripMes">Ingresa el texto a codificar:</label>	<br/>
+    		<input type="text" id="encripMes">	<br/>
+    		
+    		<label for="leftMove">Cuantos dezplazamientos 
+    			tiene el mensaje.</label>	<br/>
+    		<input type="text" id="leftMove">	<br/>
+    		
+    		<h3>Texto desencriptado:</h3>
+    		<p></p>
+    	
+    	
+    	
+    	
+    	
+    	</div>
+    </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
+

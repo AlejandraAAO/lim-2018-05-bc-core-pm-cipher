@@ -13,29 +13,21 @@ crear una aplicación que te permita enviar mensajes cifrados y que las demás
 personas (partícipes de la fiesta) puedan tener una interfaz para
 descifrarlo. Así que ahora te toca aplicar tus superpoderes 😎
 
-## Introducción
+## Definir el publico
 
-El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los
-primeros métodos de cifrado conocidos históricamente. Es un tipo de cifrado por
-sustitución en el que una letra en el texto original es reemplazada por otra
-letra que se encuentra un número fijo de posiciones más adelante en el alfabeto.
+Mi pagina web esta diseñada especialmente para un publico juvenil de 14-25 años, que desean tener un poco mas de privacidad al usar cualquier tipo de plataforma de mensajeria como whattsapp o el messenger de facebook; en ella implemento una funcion que **encripta** y **desencripta** mensajes. 
+Mi objetivo es que los jovenes tengan una plataforma de encriptacion y desencriptacion personalizada ya que cada uno puede elegir el numero de dezplazamientos que van a tener las letras de su mensaje.
+De la misma forma solo se puede desencriptar un mensaje si se conoce el numero de desplazamientos que tienen las letras del mensaje.
+Empeze mi proyecto haciendo la planificacion, priorizando el entorno que queria para realizar mi proyecto; instale las herramientas necesarias y elabore mi diagrama de flujo junto con el prototipo al que queria llegar; pensando en el publica al que queria llegar.
+Algunas ideas sobre el diseño llegaban a mi mientras iniciaba con el proyecto, no las quize perder y al momento de hacer el `index.html` las implemente en el `style.css` para previsualizar mi proyecto y animarme.
 
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+## Datos Tecnicos
+Este proyecto se puede visualizar en cualquier navegador, sin embargo recomiendo chrome y firefox.
+Diseñado para visualizar en una pc de escritorio o una laptop.
+La pagina principal se llama `index.html` y la puedes encontrar en la carpeta `src` de este archivo.
+Si tienes curiosidad puedes revisar el codigo que ejecute para el cifrado/descifrado en el archivo `cipher.js` .
 
-El emperador Julio César lo usaba para enviar órdenes a sus generales en los
-campos de batalla, es una de las técnicas más simples y más usadas para cifrar
-un mensaje.
 
-Por ejemplo si usáramos un desplazamiento de 3:
-
-* Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-* Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
-
-Actualmente todos los cifrados de sustitución alfabética simple, se descifran
-con facilidad y en la práctica no ofrece mucha seguridad en la comunicación,
-pero el cifrado César muchas veces puede formar parte de sistemas más complejos
-de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el
-sistema ROT13.
 
 ## Objetivos
 
