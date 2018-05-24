@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+  	
   	<header>
   		<h1>Caesar Cipher</h1>
   		<p></p>
   	</header>
-    <div id="root">
+    <section id="root">
     	<div id="bEnco">
     		
     		<h2>Aqui debes ingresar el mensaje que deseas codificar con el numero de
@@ -18,15 +19,17 @@
     			mensaje.
     		</h2>
     		
-	    		<label for="normalMes">Ingresa el texto a codificar:</label>	<br/>
-	    		<input type="text" id="normalMes">	<br/>
+	    		<label for="normalMes">Ingresa el texto a codificar:</label>	<br/> <br/>
+	    		<textarea type="text" id="normalMes"></textarea>	<br/> <br/>
 	    		
 	    		<label for="rightMove">Cuantos dezplazamientos 
-	    			quieres que tengan las letras.</label>	<br/>
-	    		<input type="text" id="rightMove">	<br/>
+	    			quieres que tengan las letras.</label>	<br/> <br/>
+	    		<input type="text" id="rightMove">	<br/> <br/>
+	    		
+	    		<button id="butEn">ENCODIFICAR</button>
 	    		
 	    		<h3>Texto encriptado:</h3>
-	    		<p></p>
+	    		<div id="outputEn"> </div>
     	
     	
     	</div>
@@ -36,22 +39,20 @@
     		(Recuerda que debe ser personal)
     	</h2>
     	
-    		<label for="encripMes">Ingresa el texto a codificar:</label>	<br/>
-    		<input type="text" id="encripMes">	<br/>
+    		<label for="encripMes">Ingresa el texto a codificar:</label>	<br/> <br/>
+    		<textarea type="text" id="encripMes"></textarea><br/> <br/>
     		
     		<label for="leftMove">Cuantos dezplazamientos 
-    			tiene el mensaje.</label>	<br/>
-    		<input type="text" id="leftMove">	<br/>
+    			tiene el mensaje.</label>	<br/> <br/>
+    		<input type="text" id="leftMove">	<br/> <br/> 
+    		
+    		<button id="butDe">DECODIFICAR</button>
     		
     		<h3>Texto desencriptado:</h3>
-    		<p></p>
-    	
-    	
-    	
-    	
+    		<div id="outputDe"> </div>
     	
     	</div>
-    </div>
+    </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

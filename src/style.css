@@ -13,9 +13,7 @@ body {
 	
     border: 3px solid #dbcd3b;
     padding: 10px;
-    margin: 10px;
-    float: left;
-    margin:2px auto;
+    margin: auto;
     text-align: center;
 	}
 
@@ -24,8 +22,6 @@ body {
 	
 	border: 3px solid #dbcd3b;
     padding: 10px;
-    margin: 10px;
-    float: right;
-    margin:2px auto;
+    margin: auto;
     text-align: center;
 	}
