@@ -20,12 +20,15 @@ Mi objetivo es que los jovenes tengan una plataforma de encriptacion y desencrip
 De la misma forma solo se puede desencriptar un mensaje si se conoce el numero de desplazamientos que tienen las letras del mensaje.
 Empeze mi proyecto haciendo la planificacion, priorizando el entorno que queria para realizar mi proyecto; instale las herramientas necesarias y elabore mi diagrama de flujo junto con el prototipo al que queria llegar; pensando en el publica al que queria llegar.
 Algunas ideas sobre el diseño llegaban a mi mientras iniciaba con el proyecto, no las quize perder y al momento de hacer el `index.html` las implemente en el `style.css` para previsualizar mi proyecto y animarme.
+Se me dificulto enlazar los cuadros en donde se ingresa el texto con el boton pero... LO LOGRE.
+Despues realice la formula.
 
 ## Datos Tecnicos
 Este proyecto se puede visualizar en cualquier navegador, sin embargo recomiendo chrome y firefox.
 Diseñado para visualizar en una pc de escritorio o una laptop.
 La pagina principal se llama `index.html` y la puedes encontrar en la carpeta `src` de este archivo.
 Si tienes curiosidad puedes revisar el codigo que ejecute para el cifrado/descifrado en el archivo `cipher.js` .
+
 
 
 

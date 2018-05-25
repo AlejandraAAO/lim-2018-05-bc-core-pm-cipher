@@ -14,16 +14,27 @@ ingresoText.addEventListener("input", ()=>{
 	})
 	
 	
+ingresoText.addEventListener("input", ()=>{
+	console.log(moveEn.value);
+	})
 	
+	
+
  //agrego otro escuchador de eventos al boton = cuanta las veces que hago click
+ //resultEn.innerHTML = (ingresoText.value) si funciona actualiza con el mensaje :)
 buttomEn.addEventListener("click", ()=>{
-	resultEn.innerHTML = (ingresoText.value) 
+	//resultEn.innerHTML = (ingresoText.value) 
 	//console.log(ingresoText.value);
+
+// para ver si llegan los valores a la funcion
+//  alert("ingresos: " + ingresoText.value + "  " + moveEn.value);
+  
+	resultEn.innerHTML = encode(ingresoText,moveEn);
 	})
 
 
- 
-//resultEn.innerHTML = (ingresoText.value) si funciona actualiza con el mensaje :)
+
+
 
 
 
@@ -32,11 +43,7 @@ buttomEn.addEventListener("click", ()=>{
 //buttomEn. onclick = function() {
 	
  //al hacer click en el boton el texto ingresa se muestre en el p con variable  resultEn
-
-//resultEn.appendChild(ingresoText)
-
-//}
-
+//--------------------------------------------------------------------------------------------------
 
 
 //agarramos los elementod del lado para deencriptar
@@ -46,5 +53,19 @@ const resultDe = document.getElementById("outputDe");
 var buttomDe = document.getElementById("butDe");
 
 
-
-
+ingresoTextEn.addEventListener("input", ()=>{
+	console.log(ingresoTextEn.value);
+	})
+	
+ingresoTextEn.addEventListener("input", ()=>{
+	console.log(moveDe.value);
+	})	
+	
+ //agrego otro escuchador de eventos al boton = cuanta las veces que hago click
+ //resultDe.innerHTML = (ingresoTextEn.value) si funciona actualiza con el mensaje :)
+buttomDe.addEventListener("click", ()=>{
+	//resultDe.innerHTML = (ingresoTextEn.value) 
+	//console.log(ingresoTextEn.value);
+	//})
+	resultDe.innerHTML = decode(ingresoTextEn,moveDe);
+})

@@ -1,9 +1,13 @@
 body {
-	
 	background-color: black;
 	color: white;
 	text-align: center;
 	}
+
+header {
+	background-image: url(https://malalanahistoria.wordpress.com/2013/08/25/museo-nacional-de-arte-romano-de-merida-una-reflexion-personal/);
+
+}	
 	
 #root {
 	display: inline-block;
