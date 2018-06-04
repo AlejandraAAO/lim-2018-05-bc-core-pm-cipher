@@ -18,18 +18,22 @@ descifrarlo. Así que ahora te toca aplicar tus superpoderes 😎
 Mi pagina web esta diseñada especialmente para un publico juvenil de 14-25 años, que desean tener un poco mas de privacidad al usar cualquier tipo de plataforma de mensajeria como whattsapp o el messenger de facebook; en ella implemento una funcion que **encripta** y **desencripta** mensajes. 
 Mi objetivo es que los jovenes tengan una plataforma de encriptacion y desencriptacion personalizada ya que cada uno puede elegir el numero de dezplazamientos que van a tener las letras de su mensaje.
 De la misma forma solo se puede desencriptar un mensaje si se conoce el numero de desplazamientos que tienen las letras del mensaje.
+
+##Desarrollo
 Empeze mi proyecto haciendo la planificacion, priorizando el entorno que queria para realizar mi proyecto; instale las herramientas necesarias y elabore mi diagrama de flujo junto con el prototipo al que queria llegar; pensando en el publica al que queria llegar.
 Algunas ideas sobre el diseño llegaban a mi mientras iniciaba con el proyecto, no las quize perder y al momento de hacer el `index.html` las implemente en el `style.css` para previsualizar mi proyecto y animarme.
 Se me dificulto enlazar los cuadros en donde se ingresa el texto con el boton pero... LO LOGRE.
-Despues realice la formula.
+Despues realice la formula, tuve el problema en el que se me concatenada el numero de desplazamiento y no me di cuenta.
+Sin embargo gracias a este problema pude crear otra formula mas especifica en la que  encripta y desencripta mayusculas y minusculas.
+Luego ejecute los test, y me puso que no habia declarado un par de variables.
+Al final corregi los errrores y termine el proyecto.
+Mi meta para la proxima vez es completar el hacker edition. 
 
 ## Datos Tecnicos
 Este proyecto se puede visualizar en cualquier navegador, sin embargo recomiendo chrome y firefox.
 Diseñado para visualizar en una pc de escritorio o una laptop.
 La pagina principal se llama `index.html` y la puedes encontrar en la carpeta `src` de este archivo.
 Si tienes curiosidad puedes revisar el codigo que ejecute para el cifrado/descifrado en el archivo `cipher.js` .
-
-
 
 
 ## Objetivos
