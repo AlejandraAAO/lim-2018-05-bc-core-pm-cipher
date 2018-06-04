@@ -3,47 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
   </head>
   <body>
   	
   	<header>
   		<h1>Caesar Cipher</h1>
-  		<p></p>
+  		<p>Hola, esta web te permite encriptar tus mensajes sustituyendo cada letra por otra.
+  			Para hacerlo debes ingresar tu texto en la casilla numero 1, luego debes aumentar o disminuir el numero de desplazamientos que corra tu letra,
+  			por ejemplo si para una "a" eliges como desplazamiento 2, te resultara la letra"c", y asi sucesivamente.  </p>
   	</header>
     <section id="root">
     	<div id="bEnco">
     		
-    		<h2>Aqui debes ingresar el mensaje que deseas codificar con el numero de
-    			dezplazamientos hacia la derecha que quieres que tengan las letras de tu 
-    			mensaje.
+    		<h2>ENCRIPTAR
     		</h2>
-    		
-	    		<label for="normalMes">Ingresa el texto a codificar:</label>	<br/> <br/>
-	    		<textarea type="text" id="normalMes"></textarea>	<br/> <br/>
+					
+
+	    		<label for="normalMess">Nro 1: Texto</label>	<br/> <br/>
+	    		<textarea type="text" id="normalMess" placeholder="Porfavor, ingresa tu texto a codificar" rows="10" cols="30"></textarea>	<br/> <br/>
 	    		
-	    		<label for="rightMove">Cuantos dezplazamientos 
-	    			quieres que tengan las letras.</label>	<br/> <br/>
-	    		<input type="number" id="rightMove">	<br/> <br/>
-	    		
+	    		<label for="rightMove">Nro 2: Desplazamientos</label>	<br/> <br/>
+					<input type="number" id="rightMove">	<br/> <br/>
+			
 	    		<button id="butEn">ENCODIFICAR</button>
 	    		
 	    		<h3>Texto encriptado:</h3>
 	    		<div id="outputEn"> </div>
-    	
-    	
-    	</div>
+	    </div>		
+   
     	<div id="bDeco">
     	
-    	<h2>Solo podras decodificar un mensaje si sabes el numero de desplazamientos.
-    		(Recuerda que debe ser personal)
+    	<h2>DESENCRIPTAR
     	</h2>
     	
-    		<label for="encripMes">Ingresa el texto a codificar:</label>	<br/> <br/>
-    		<textarea type="text" id="encripMes"></textarea><br/> <br/>
+    		<label for="encripMes">Nro 1:Texto</label>	<br/> <br/>
+    		<textarea type="text" id="encripMes" placeholder="Ingresa el texto encriptado" rows="10" cols="30"></textarea><br/> <br/>
     		
-    		<label for="leftMove">Cuantos dezplazamientos 
-    			tiene el mensaje.</label>	<br/> <br/>
+    		<label for="leftMove">Nro 2: Desplazamientos</label>	<br/> <br/>
     		<input type="number" id="leftMove">	<br/> <br/> 
     		
     		<button id="butDe">DECODIFICAR</button>
@@ -53,6 +51,9 @@
     	
     	</div>
     </section>
+    <footer>
+    	Design by <a href="https://www.facebook.com/moka.amezaga" target= "_blank" title="Facebook">Alejandra Amezaga</a>
+	  </footer>	
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

@@ -1,31 +1,69 @@
 body {
-	background-color: black;
-	color: white;
-	text-align: center;
+	background-image: url(https://i.ytimg.com/vi/xyQEQi1FAsE/maxresdefault.jpg);
+	background-repeat: repeat-y;
+	background-size:100%;
+	color: black;
+	background-color: rgba(250, 250, 250, 0.1);
+	font-family: 'VT323', monospace;
+	text-align: center
 	}
 
 header {
-	background-image: url(https://malalanahistoria.wordpress.com/2013/08/25/museo-nacional-de-arte-romano-de-merida-una-reflexion-personal/);
-
-}	
+	border: 3px solid #dbcd3b;
+	font-size: 30px;
+	text-align: center;
+	opacity: 0.85;
+  filter: alpha(opacity=85);
+  background-color: #ffffff
 	
-#root {
-	display: inline-block;
+	
+}
+
+	
+h2 {
+	text-align: center;
+	}	
+	
+	
+#root{
+	width: 100%;
+	display : inline-block;
+	position: center
 	}
 
-#bEnco {
+	
+#bEnco{
 	
     border: 3px solid #dbcd3b;
-    padding: 10px;
-    margin: auto;
-    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 25px;
+    width: 45%;
+  	margin: 1% ;
+  	float:left;
+  	font-weight: bold;
+  	opacity: 0.85;
+    filter: alpha(opacity=85);
+    background-color: #ffffff
 	}
-
+	
 
 #bDeco {
 	
-	border: 3px solid #dbcd3b;
-    padding: 10px;
-    margin: auto;
-    text-align: center;
+    border: 3px solid #dbcd3b;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 25px;
+    width: 45%;
+  	margin: 1% ;
+  	float:right;
+  	font-weight: bold;
+  	opacity: 0.85;
+    filter: alpha(opacity=85);
+    background-color: #ffffff;
 	}
+
+footer{
+	font-size:20px;
+	margin:2px;
+	}	
