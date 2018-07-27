@@ -18,52 +18,41 @@ header {
 	
 	
 }
-
 	
 h2 {
 	text-align: center;
 	}	
-	
-	
-#root{
+		
+.body {
 	width: 100%;
 	display : inline-block;
 	position: center
 	}
 
+.block {
 	
-#bEnco{
-	
-    border: 3px solid #dbcd3b;
-    border-radius: 10px;
-    padding: 5px;
-    font-size: 25px;
-    width: 45%;
-  	margin: 1% ;
-  	float:left;
-  	font-weight: bold;
-  	opacity: 0.85;
-    filter: alpha(opacity=85);
-    background-color: #ffffff
+	border: 3px solid #dbcd3b;
+	border-radius: 10px;		
+	padding: 5px;
+	font-size: 25px;
+	width: 45%;
+	margin: 1% ;
+	font-weight: bold;
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+	background-color: #ffffff
+	}
+
+#bEnco {
+	float: left;
 	}
 	
 
 #bDeco {
-	
-    border: 3px solid #dbcd3b;
-    border-radius: 10px;
-    padding: 5px;
-    font-size: 25px;
-    width: 45%;
-  	margin: 1% ;
-  	float:right;
-  	font-weight: bold;
-  	opacity: 0.85;
-    filter: alpha(opacity=85);
-    background-color: #ffffff;
+  	float: right;
 	}
 
-footer{
-	font-size:20px;
-	margin:2px;
+footer {
+	font-size: 20px;
+	margin: 2px;
 	}	

@@ -7,7 +7,7 @@
 
 window.cipher = {
       // poniendo objetosvc
-      encode: (string, offset) => {
+      encode: (offset, string) => {
             let textDecodificado = []; //array contenedor
 
             for (let i = 0; i < string.length; i++) {
@@ -21,10 +21,10 @@ window.cipher = {
 
                   } else if (ascii >= 97 && ascii <= 122) { //para las minunculas
                         //console.log(ascii)
-                        encodeNum = ((ascii - 97) + parseInt(offset)) % 26 + 97;
+                        let encodeNum = ((ascii - 97) + parseInt(offset)) % 26 + 97;
                         textDecodificado.push(String.fromCharCode(encodeNum));
 
-                  } else { //espacio
+                  } else { //espacio y todo lo demas
                         textDecodificado.push(string[i]);
                   }
             }
@@ -34,33 +34,24 @@ window.cipher = {
       //console.log(encode("A z",2));
       //console.log(encode("A z",2));
       //----------------------------DECODIFICANDO----------
-      decode: (string, offset) => {
+      decode: (offset, string) => {
             let textDecodificado = []; //array contenedor
 
             for (let i = 0; i < string.length; i++) {
                   let ascii = string[i].charCodeAt();
                   if (ascii >= 65 && ascii <= 90) { //para las mayusculas!!!
-                        //console.log(ascii)
-                        let cal1 = ((ascii - 65) - parseInt(offset)) % 26;
-
-                        //alert("ascii : " + ascii + " . " + (ascii - 65) + " - " + cal1)
-
-                        if (cal1 < 0) {
-                              cal1 = cal1 + 26;
-                              let decodeNum = cal1 + 65;
+                        let decodeNum = ((ascii - 65) - parseInt(offset)) % 26;
+                        if (decodeNum < 0) {
+                              decodeNum = decodeNum + 26 + 65;
                         } else {
                               decodeNum = ((ascii - 65) - parseInt(offset)) % 26 + 65;
                         }
-                        //console.log(decodeNum)
                         textDecodificado.push(String.fromCharCode(decodeNum));
 
                   } else if (ascii >= 97 && ascii <= 122) { //para las minunculas
-                        //console.log(ascii)
-                        cal1 = ((ascii - 97) - parseInt(offset)) % 26;
-                        //alert("ascii : " + ascii + " . " + (ascii - 97) + " - " + cal1)
-                        if (cal1 < 0) {
-                              cal1 = cal1 + 26;
-                              decodeNum = cal1 + 97;
+                        let decodeNum = ((ascii - 97) - parseInt(offset)) % 26;
+                        if (decodeNum < 0) {
+                              decodeNum = decodeNum + 26 + 97;
                         } else {
                               decodeNum = ((ascii - 97) - parseInt(offset)) % 26 + 97;
                         }
@@ -72,5 +63,11 @@ window.cipher = {
             }
             return textDecodificado.join("")
       },
-      //console.log(decode("C Z",2));
+      createCipherWithOffset: (offset) => {
+            let objCip ={
+                  encode: (string) => cipher.encode(offset, string),
+                  decode: (string) => cipher.decode(offset, string)
+            };
+            return objCip;
+      }
 };

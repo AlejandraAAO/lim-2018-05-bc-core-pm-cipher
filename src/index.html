@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
 	<meta charset="utf-8">
@@ -12,12 +12,12 @@
 
 	<header>
 		<h1>Caesar Cipher</h1>
-		<p>Hola, esta web te permite encriptar tus mensajes sustituyendo cada letra por otra. Para hacerlo debes ingresar tu texto
-			en la casilla numero 1, luego debes aumentar o disminuir el numero de desplazamientos que corra tu letra, por ejemplo
-			si para una "a" eliges como desplazamiento 2, te resultara la letra"c", y asi sucesivamente. </p>
+		<p>Esta web te permite encriptar tus mensajes sustituyendo cada letra por otra. Para hacerlo debes ingresar tu texto
+			en la primera casilla, luego debes aumentar o disminuir el número de desplazamientos que corra tu letra, por ejemplo
+			si para una "a" eliges como desplazamiento 2, te resultara la letra "c", y así sucesivamente. </p>
 	</header>
-	<section id="root">
-		<div id="bEnco">
+	<section id="root" class="body">
+		<div id="bEnco" class="block">
 
 			<h2>ENCRIPTAR
 			</h2>
@@ -26,7 +26,7 @@
 			<label for="normalMess">Nro 1: Texto</label>
 			<br/>
 			<br/>
-			<textarea type="text" id="normalMess" placeholder="Porfavor, ingresa tu texto a codificar" rows="10" cols="30"></textarea>
+			<textarea  id="normalMess" placeholder="Porfavor, ingresa tu texto a codificar" rows="10" cols="30"></textarea>
 			<br/>
 			<br/>
 
@@ -43,7 +43,7 @@
 			<div id="outputEn"> </div>
 		</div>
 
-		<div id="bDeco">
+		<div id="bDeco" class="block">
 
 			<h2>DESENCRIPTAR
 			</h2>
@@ -51,7 +51,7 @@
 			<label for="encripMes">Nro 1:Texto</label>
 			<br/>
 			<br/>
-			<textarea type="text" id="encripMes" placeholder="Ingresa el texto encriptado" rows="10" cols="30"></textarea>
+			<textarea id="encripMes" placeholder="Ingresa el texto encriptado" rows="10" cols="30"></textarea>
 			<br/>
 			<br/>
 
